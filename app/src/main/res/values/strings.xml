@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jetpackweek1</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_listview_ex">ListviewEx</string>
+    <string name="title_activity_mpesa">MpesaActivity</string>
+    <string name="title_activity_scrolllist">Scrolllist</string>
+    <string name="title_activity_main_intents">MainIntents</string>
+</resources>

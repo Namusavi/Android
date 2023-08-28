@@ -16,16 +16,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-class ListviewEx : ComponentActivity() {
+class MpesaActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-          Mylist()
+
         }
     }
 }
-
-private  val countryList = mutableListOf("Kenya", "Uganda", "Burundi", "Rwanda")
+private  val menuList = mutableListOf("Send Money", "Withdraw Cash", "Buy Airtime", "Loans and Savings", "Lipa na Mpesa","My Account")
 private val listModifier = Modifier
     .fillMaxSize()
     .background(Color.DarkGray)
@@ -35,28 +34,16 @@ private val textStyle: androidx.compose.ui.text.TextStyle
     get() = androidx.compose.ui.text.TextStyle(fontSize = 20.sp)
 
 
+
 @Preview(showBackground = true)
 @Composable
-fun Mylist(){
+fun mpesamenu() {
+   LazyColumn(modifier = listModifier ){
+       items(menuList){
+        menu->
+           Text(text = menu)
 
-
-     LazyColumn(modifier = listModifier){
-         items(countryList){
-         country ->
-             Text(text = country)
-
-    
+        }
+    }
 }
-
-     }
-
-
-}
-
-
-
-
-
-
-
 
